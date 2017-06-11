@@ -1,24 +1,14 @@
-# 461. Hamming Distance
+# 561. Array Partition I
 ## Problem：
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-Given two integers x and y, calculate the Hamming distance.
-Note:
-0 ≤ x, y < 231.
-Example:
-Input: x = 1, y = 4
-Output: 2
+Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.
 
-Explanation:
+Example 1:
 
-1   (0 0 0 1)
+Input: [1,4,3,2]
 
-4   (0 1 0 0)
+Output: 4
+
+Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 ## Key：
-1.the last bit is 1→odd  the last bit is 0→even;
-
-   use while loop to divide them by 2
-
-2.use XOR and count it by n&(n-1)
-
-   (n=x^y)
+1.Sort them, and add them every other( nums[0], nums[2], nums[4]......)    O(nlogn)
