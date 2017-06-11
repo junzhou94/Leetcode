@@ -1,4 +1,4 @@
-# 461. Hamming Distance
+# 476. Number Complement
 ## Problem：
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
